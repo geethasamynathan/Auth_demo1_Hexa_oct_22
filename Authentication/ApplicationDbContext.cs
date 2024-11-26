@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
+﻿using Auth_demo1.Models;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 
 namespace Auth_demo1.Authentication
@@ -9,5 +10,7 @@ namespace Auth_demo1.Authentication
         {
             
         }
+        public DbSet<Product> Products { get; set; }
+
     }
 }
